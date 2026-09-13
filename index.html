@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SAIF — AI Generation Specialist</title>
+<meta name="description" content="SAIF — AI Generation Specialist working across commercial, animation, entertainment, visual development and cinematic AI production.">
+<style>
+:root{--bg:#060606;--panel:#0d0d0d;--text:#f4f2ec;--muted:#92918b;--line:#252525;--soft:#151515;--max:1380px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45}
+a{color:inherit;text-decoration:none}img,video{display:block;width:100%;height:100%;object-fit:cover}
+.nav{position:fixed;z-index:30;top:0;left:0;right:0;padding:20px 4vw;display:flex;justify-content:space-between;align-items:center;background:linear-gradient(#050505e8,transparent);backdrop-filter:blur(6px)}
+.logo{font-size:12px;letter-spacing:.24em;font-weight:800}.navlinks{display:flex;gap:26px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#aaa}
+.hero{min-height:92vh;position:relative;display:flex;align-items:flex-end;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-media{position:absolute;inset:0}.hero-media video{filter:brightness(.43);object-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,#0004 0%,#0000 38%,#060606 100%)}
+.hero-content{position:relative;z-index:2;width:var(--max);margin:auto;padding:0 5vw 9vh}
+.kicker{font-size:10px;letter-spacing:.26em;text-transform:uppercase;color:#bbb9b2;margin-bottom:18px}
+h1{font-size:clamp(62px,11vw,165px);line-height:.82;letter-spacing:-.07em;margin:0 0 30px;font-weight:750}
+.hero-sub{max-width:720px;color:#c5c3bc;font-size:16px}.hero-meta{margin-top:35px;display:flex;gap:22px;flex-wrap:wrap;font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:#aaa}
+section{max-width:var(--max);margin:auto;padding:115px 5vw}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:42px}
+.section-num{font-size:9px;color:#6f6e69;letter-spacing:.22em;text-transform:uppercase}.section-title{font-size:clamp(42px,5.4vw,78px);line-height:.9;letter-spacing:-.055em;margin-top:8px}.section-intro{max-width:470px;color:var(--muted);font-size:14px}
+.feature{margin:0 0 120px}.feature:last-child{margin-bottom:0}.media-xl{aspect-ratio:16/9;background:#111;border:1px solid var(--line);overflow:hidden}.feature-grid{display:grid;grid-template-columns:1fr 300px;gap:55px;margin-top:25px}
+.eyebrow{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#85837d}.project-title{font-size:clamp(34px,4.3vw,60px);letter-spacing:-.045em;line-height:.94;margin:9px 0 15px}.project-copy{color:#a7a59f;max-width:760px;font-size:14px}
+.tags,.flow{display:flex;gap:7px;flex-wrap:wrap;margin-top:22px}.tag,.flow span{border:1px solid #2a2a2a;padding:7px 10px;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#9d9b95}.side-spec{border-left:1px solid var(--line);padding-left:22px}.spec{margin-bottom:21px}.spec b{display:block;font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#d1cfc8;margin-bottom:5px}.spec span{font-size:12px;color:#777}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{background:var(--panel);border:1px solid var(--line)}.card-media{aspect-ratio:16/9}.card-info{padding:19px 20px 22px}.card-info h3{font-size:25px;letter-spacing:-.035em;margin:6px 0 7px}.card-info p{font-size:12px;color:#878680;margin:0}
+.kia-compare{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px}.compare{border:1px solid var(--line);background:#0d0d0d}.compare-media{aspect-ratio:16/10}.compare-label{padding:12px 14px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:#aaa}.kia-caption{padding:25px;background:#0c0c0c;border:1px solid var(--line)}.kia-caption h3{font-size:42px;line-height:.95;letter-spacing:-.045em;margin:0 0 12px}.kia-caption p{color:#96958f;max-width:760px;font-size:14px}
+.logo-row{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.brand{min-height:145px;border:1px solid var(--line);background:#0b0b0b;display:flex;align-items:center;justify-content:center;padding:24px}.brand img{max-height:90px;object-fit:contain;width:auto;max-width:100%}.brand.word{font-weight:700;letter-spacing:.08em;font-size:22px;text-align:center}.brand small{display:block;font-size:9px;letter-spacing:.16em;color:#777;margin-top:8px}
+.tools{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}.tool{padding:19px 0;border-bottom:1px solid var(--line);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#b5b3ad}
+.reserve{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.slot{min-height:210px;border:1px dashed #303030;padding:22px;display:flex;flex-direction:column;justify-content:space-between;background:linear-gradient(145deg,#0a0a0a,#0e0e0e)}.slot.priority{border-style:solid}.slot .num{font-size:8px;letter-spacing:.18em;color:#666}.slot h3{font-size:25px;letter-spacing:-.03em;margin:0}.slot p{font-size:11px;color:#666;margin:0}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:75px}.about h2{font-size:clamp(44px,5.5vw,82px);line-height:.9;letter-spacing:-.06em;margin:0}.about p{color:#9b9a94;font-size:15px;max-width:700px}.cap-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line);margin-top:30px}.cap-grid div{padding:14px 0;border-bottom:1px solid var(--line);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:#aaa}
+.contact{min-height:70vh;display:flex;align-items:flex-end}.contact h2{font-size:clamp(62px,10vw,150px);line-height:.8;letter-spacing:-.075em;margin:0 0 28px}.contact p{color:#91908a;max-width:520px}.contact-link{display:inline-block;margin-top:22px;padding-bottom:8px;border-bottom:1px solid #777;font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+.contact-links{display:flex;gap:20px;margin-top:22px;flex-wrap:wrap}
+footer{border-top:1px solid var(--line);padding:24px 5vw;display:flex;justify-content:space-between;color:#5f5e5a;font-size:8px;letter-spacing:.14em;text-transform:uppercase}
+.note{font-size:11px;color:#666;margin-top:10px}
+@media(max-width:800px){.navlinks{display:none}.hero-content{padding-bottom:60px}section{padding:80px 6vw}.section-head,.feature-grid,.about{display:grid;grid-template-columns:1fr}.feature-grid{gap:25px}.side-spec{border-left:0;border-top:1px solid var(--line);padding:20px 0 0}.split,.kia-compare,.logo-row,.reserve{grid-template-columns:1fr}.tools{grid-template-columns:1fr 1fr}.contact{min-height:60vh}}
+</style>
+<style>
+.project-brand{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.project-brand img{width:110px;height:42px;object-fit:contain;border:1px solid #242424;background:#0b0b0b}
+.project-brand span{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:#888}
+.tool-ticker{width:100%;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#080808}
+.tool-track{display:flex;width:max-content;animation:toolscroll 28s linear infinite;will-change:transform}
+.tool-set{width:auto;min-width:0;flex:none;display:flex;align-items:center;gap:14px;padding:18px 7px}
+.tool-logo{width:150px;height:110px;flex:0 0 150px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#101010;border:1px solid #292929}
+.tool-logo img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:contain;padding:12px}
+@keyframes toolscroll{from{transform:translateX(0)}to{transform:translateX(calc(-50% - 7px))}}
+.tool-ticker:hover .tool-track{animation-play-state:paused}
+@media(max-width:800px){.tool-logo{width:120px;height:90px;flex-basis:120px}.tool-set{gap:10px;padding:14px 5px}}
+</style></head>
+<body>
+<nav class="nav"><a class="logo" href="#top">SAIF</a><div class="navlinks"><a href="#commercial">Commercial</a><a href="#animation">Animation</a><a href="#development">Development</a><a href="#experimental">Experimental</a><a href="#about">About</a></div></nav>
+
+<header class="hero" id="top">
+  <div class="hero-media"><video autoplay muted loop playsinline poster="assets/kia-poster.jpg"><source src="assets/kia-sportage-final.mp4" type="video/mp4"></video></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="kicker">AI Generation Specialist / Commercial / Animation / Visual Development</div>
+    <h1>MAKE<br>IT REAL.</h1>
+    <div class="hero-sub">I use generative AI as a production medium — translating creative ideas into commercial visuals, animation, entertainment work and cinematic moving images.</div>
+    <div class="hero-meta"><span>Commercial</span><span>Animation</span><span>Visual Development</span><span>AI Generation</span></div>
+  </div>
+</header>
+
+<section id="commercial">
+  <div class="section-head"><div><div class="section-num">01 / Commercial & Client Work</div><div class="section-title">Built to<br>be used.</div></div><div class="section-intro">The strongest professional work comes first: branded content, commercial production and projects where AI is part of a real creative workflow.</div></div>
+
+  <article class="feature">
+    <div class="kia-compare">
+      <div class="compare"><div class="compare-media"><img src="assets/kia-storyboard.jpg" alt="KIA Sportage storyboard"></div><div class="compare-label">Before / Storyboard & Visual Development</div></div>
+      <div class="compare"><div class="compare-media"><video controls playsinline poster="assets/kia-poster.jpg"><source src="assets/kia-sportage-final.mp4" type="video/mp4"></video></div><div class="compare-label">After / Finished Commercial</div></div>
+    </div>
+    <div class="kia-caption"><div class="project-brand"><img src="assets/kia-brand-card.jpg" alt="KIA logo"><span>KIA SPORTAGE</span></div><h3>Storyboard →<br>Live-Action Ad.</h3><p>The project is presented as a direct before-and-after: the storyboard establishes the creative idea, while the finished film shows how that thinking can become a believable live-action-style commercial. AI sits between concept and execution as a tool for expanding and visualizing creative possibilities.</p><div class="flow"><span>Creative Idea</span><span>Storyboard</span><span>AI Visual Development</span><span>Commercial</span></div></div>
+  </article>
+
+  <div class="split">
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/halan-01-poster.jpg"><source src="assets/halan-01.mp4" type="video/mp4"></video></div><div class="card-info"><div class="project-brand"><img src="assets/halan-brand-card.jpg" alt="Halan logo"><span>HALAN / 01</span></div><h3>Commercial Content</h3><p>Football-focused branded content and AI-assisted visual production.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/halan-02-poster.jpg"><source src="assets/halan-02.mp4" type="video/mp4"></video></div><div class="card-info"><div class="project-brand"><img src="assets/halan-brand-card.jpg" alt="Halan logo"><span>HALAN / 02</span></div><h3>Commercial Content</h3><p>Second campaign piece with interview, stadium and fan-driven imagery.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/beefly-poster.jpg"><source src="assets/beefly.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">BEEFLY</div><h3>Product → Character</h3><p>Generated the bread characters and created dialogue lip-sync so the words align with the characters' mouths. AI generation becomes character performance inside a commercial.</p></div></article>
+    <article class="card"><div class="card-media"><img src="assets/ebn-meen-fehom.jpg" alt="Ebn Meen Fehom poster"></div><div class="card-info"><div class="eyebrow">EBN MEEN FEHOM</div><h3>Film / Commercial Work</h3><p>AI Generation Specialist — project identity and supplied film artwork.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/efrag-poster.jpg"><source src="assets/efrag.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">EFRAG</div><h3>AI Visual Production</h3><p>Professional production work with supplied credits including VFX, matchmove, AI specialist and graphic design.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/tmg-poster.jpg"><source src="assets/tmg.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">TMG</div><h3>Visual Sequence</h3><p>AI-generated visual storytelling within a corporate / real-estate presentation format.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/avatar-poster.jpg"><source src="assets/avatar.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">AVATAR</div><h3>AI Video Production</h3><p>Talking-head / avatar-driven visual production demonstrating a different commercial communication format.</p></div></article>
+  </div>
+</section>
+
+<section id="animation">
+  <div class="section-head"><div><div class="section-num">02 / Animation & Entertainment</div><div class="section-title">Draw it.<br>Move it.</div></div><div class="section-intro">Animation and entertainment work sits directly after commercial work, with authored AI animation treated as a production discipline.</div></div>
+
+  <article class="feature">
+    <div class="media-xl"><video controls playsinline poster="assets/favelin-poster.jpg"><source src="assets/favelin.mp4" type="video/mp4"></video></div>
+    <div class="feature-grid">
+      <div><div class="eyebrow">FAVELIN</div><div class="project-title">AI-AUTHORED ANIMATION.</div><p class="project-copy">You created the animation drawings and the movement using AI. That distinction matters: this is not presented as a one-click final-video generation exercise, but as an authored animation workflow where AI participates in both the visual drawing process and motion.</p><div class="flow"><span>Drawing</span><span>AI Generation</span><span>Movement</span><span>Animation</span></div></div>
+      <aside class="side-spec"><div class="spec"><b>Role</b><span>AI Generation Specialist</span></div><div class="spec"><b>Contribution</b><span>Animation drawings + AI movement</span></div><div class="spec"><b>Credits</b><span>Supplied production credits included</span></div></aside>
+    </div>
+  </article>
+
+  <div class="split">
+    <article class="card"><div class="card-media"><div style="height:100%;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;background:linear-gradient(135deg,#111,#181818)"><div><div class="eyebrow">SINGLE MOTHER FATHER</div><div style="font-size:34px;line-height:.95;letter-spacing:-.04em;margin-top:10px">TV SHOW<br>INTRO</div><div class="note">Video reserved — ready to drop in.</div></div></div></div><div class="card-info"><div class="eyebrow">RESERVED / PRIORITY</div><h3>Single Mother Father</h3><p>Entertainment project. Video pending.</p></div></article>
+    <article class="card"><div class="card-media"><div style="height:100%;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;background:linear-gradient(135deg,#111,#181818)"><div><div class="eyebrow">NBK / ADAPTATION 01</div><div style="font-size:34px;line-height:.95;letter-spacing:-.04em;margin-top:10px">COMMERCIAL<br>ADAPTATION</div><div class="note">Video reserved — ready to drop in.</div></div></div></div><div class="card-info"><div class="eyebrow">RESERVED / PRIORITY</div><h3>NBK / Adaptation 01</h3><p>Vertical → horizontal commercial adaptation. Video pending.</p></div></article>
+    <article class="card" style="grid-column:1 / -1"><div class="card-media"><div style="height:100%;display:flex;align-items:center;justify-content:center;padding:30px;text-align:center;background:linear-gradient(135deg,#111,#181818)"><div><div class="eyebrow">NBK / ADAPTATION 02</div><div style="font-size:34px;line-height:.95;letter-spacing:-.04em;margin-top:10px">COMMERCIAL<br>ADAPTATION</div><div class="note">Video reserved — ready to drop in.</div></div></div></div><div class="card-info"><div class="eyebrow">RESERVED / PRIORITY</div><h3>NBK / Adaptation 02</h3><p>Vertical → horizontal commercial adaptation. Video pending.</p></div></article>
+  </div>
+</section>
+<section id="development">
+  <div class="section-head"><div><div class="section-num">03 / Visual Development</div><div class="section-title">Before the<br>final frame.</div></div><div class="section-intro">The portfolio shows the thinking layer: storyboard, visual development, controlled transformations and the translation of drawn ideas into moving images.</div></div>
+  <div class="process"><div class="process-media" style="aspect-ratio:16/10"><img src="assets/kia-storyboard.jpg" alt="KIA Sportage storyboard"></div><div class="process-copy" style="padding:30px;background:#0d0d0d;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:end"><div class="eyebrow">KIA SPORTAGE / VISUAL DEVELOPMENT</div><h3 style="font-size:40px;line-height:.96;margin:0 0 14px;letter-spacing:-.04em">The idea existed<br>before the camera.</h3><p style="font-size:13px;color:#92918c;max-width:560px">A storyboard can become more than a planning document when AI is used to visualize the intended final language. Here, the portfolio makes the relationship explicit instead of hiding the process.</p><div class="flow"><span>Storyboard</span><span>AI Visualization</span><span>Final Film</span></div><p class="note"><a href="assets/kia-storyboard.pdf">Open full 36-page storyboard →</a></p></div></div>
+
+
+</section>
+
+<section id="experimental">
+  <div class="section-head"><div><div class="section-num">04 / AI Filmmaking & Experimental</div><div class="section-title">Where the<br>rules bend.</div></div><div class="section-intro">Experimental work is deliberately placed later. It demonstrates range without making the portfolio look like an AI demo reel before the professional work has been established.</div></div>
+
+  <article class="feature">
+    <div class="bullsai-gallery" style="display:grid;grid-template-columns:1.35fr .65fr;gap:10px"><div style="aspect-ratio:16/10;background:#111"><img src="assets/bullsai-hero.png" alt="BullsAI rider and bull"></div><div style="display:grid;gap:10px"><div style="aspect-ratio:16/10;background:#111"><img src="assets/bullsai-action.png" alt="BullsAI action"></div><div style="aspect-ratio:16/10;background:#111"><img src="assets/bullsai-detail.png" alt="BullsAI detail"></div></div></div>
+    <div class="feature-grid"><div><div class="eyebrow">BULLSAI</div><div class="project-title">A COHERENT VISUAL UNIVERSE.</div><p class="project-copy">A cinematic bull-riding sequence built around character, environment, lighting, atmosphere, action and shot-to-shot consistency.</p><div class="tags"><span class="tag">Character</span><span class="tag">Environment</span><span class="tag">Action</span><span class="tag">Lighting</span><span class="tag">Continuity</span></div></div><aside class="side-spec"><div class="spec"><b>Role</b><span>AI Generation Specialist</span></div><div class="spec"><b>Strength</b><span>Visual consistency across shots</span></div></aside></div>
+  </article>
+
+  <div class="split">
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/ai-isnt-real-poster.jpg"><source src="assets/ai-isnt-real.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">AI ISN'T REAL</div><h3>Experimental Film</h3><p>A cinematic exploration of believable AI imagery and the boundary between generated visuals and film language.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/war-poster.jpg"><source src="assets/war-reel.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">WAR REEL</div><h3>Cinematic Action Study</h3><p>Atmosphere, action, weather and large-scale cinematic imagery.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/tower-poster.jpg"><source src="assets/tower-color-change.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">TOWER COLOR CHANGE</div><h3>Controlled Transformation</h3><p>A focused visual-change experiment exploring controlled transformation while preserving scene coherence.</p></div></article>
+    <article class="card"><div class="card-media"><video controls playsinline poster="assets/zipline-poster.jpg"><source src="assets/zipline-selected-shot.mp4" type="video/mp4"></video></div><div class="card-info"><div class="eyebrow">SELECTED SHOT / ZIPLINE</div><h3>Commercial Shot</h3><p>A short selected shot from a larger advertisement. Campaign context can be added when the full ad is supplied.</p></div></article>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><div><div class="section-num">05 / Brand & Production Context</div><div class="section-title">The work<br>has a name.</div></div><div class="section-intro">Selected supplied brand identities and project marks. These are presented as project context, not as claims of endorsement or partnership.</div></div>
+  <div class="logo-row">
+    <div class="brand"><img src="assets/kia-logo.png" alt="KIA"></div>
+    <div class="brand"><img src="assets/halan-logo.png" alt="Halan"></div>
+    <div class="brand"><img src="assets/favelin-logo.png" alt="Favelin"></div>
+    <div class="brand"><img src="assets/efrag-logo.png" alt="Efrag"></div>
+    <div class="brand"><img src="assets/tmg-logo.png" alt="TMG"></div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head"><div><div class="section-num">06 / Production Toolkit</div><div class="section-title">The stack<br>behind it.</div></div><div class="section-intro">The platforms used across the work, presented as a continuous broadcast strip.</div></div>
+  <div class="tool-ticker" aria-label="Production platforms">
+    <div class="tool-track">
+      <div class="tool-set">
+        <div class="tool-logo"><img src="assets/blender-logo.png" alt="Blender"></div>
+        <div class="tool-logo"><img src="assets/comfy-logo.png" alt="Comfy"></div>
+        <div class="tool-logo"><img src="assets/photoshop-logo.png" alt="Photoshop"></div>
+        <div class="tool-logo"><img src="assets/premiere-logo.png" alt="Premiere Pro"></div>
+        <div class="tool-logo"><img src="assets/higgsfield-logo.png" alt="Higgsfield"></div>
+        <div class="tool-logo"><img src="assets/magnific-logo.png" alt="Magnific"></div>
+      </div>
+      <div class="tool-set" aria-hidden="true">
+        <div class="tool-logo"><img src="assets/blender-logo.png" alt=""></div>
+        <div class="tool-logo"><img src="assets/comfy-logo.png" alt=""></div>
+        <div class="tool-logo"><img src="assets/photoshop-logo.png" alt=""></div>
+        <div class="tool-logo"><img src="assets/premiere-logo.png" alt=""></div>
+        <div class="tool-logo"><img src="assets/higgsfield-logo.png" alt=""></div>
+        <div class="tool-logo"><img src="assets/magnific-logo.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="tools">
+    <div class="tool">AI Generation</div><div class="tool">Generative Video</div><div class="tool">AI Animation</div><div class="tool">Visual Development</div>
+    <div class="tool">Character Generation</div><div class="tool">Motion Generation</div><div class="tool">Storyboard Visualization</div><div class="tool">Format Adaptation</div>
+  </div>
+</section>
+
+
+
+<section id="about">
+  <div class="about"><div><div class="section-num">07 / About</div><h2>AI is the<br>medium.<br>Generation<br>is the craft.</h2></div><div><p>I am an <strong>AI Generation Specialist</strong> working across commercial content, animation, entertainment, visual development and cinematic AI production.</p><p>My role is to turn creative intent into usable visual material — from generated characters and animated performances to storyboard visualization, commercial shots and cinematic sequences.</p><div class="cap-grid"><div>AI Generation</div><div>Commercial Content</div><div>AI Animation</div><div>Character Generation</div><div>Motion Generation</div><div>Visual Development</div><div>Storyboard Visualization</div><div>Format Adaptation</div><div>Cinematic AI</div><div>Creative Problem Solving</div></div></div></div>
+</section>
+
+<section class="contact"><div><div class="section-num">08 / Contact</div><h2>LET'S<br>CREATE.</h2><p>Available for commercial production, AI animation, visual development and generative AI projects.</p><div class="contact-links"><a class="contact-link" href="mailto:saifeldeenmostafa05@gmail.com">Email</a><a class="contact-link" href="https://www.instagram.com/saif_mostafa08/" target="_blank">Instagram</a></div></div></section>
+<footer><span>SAIF / AI GENERATION SPECIALIST</span><span>© 2026</span></footer>
+</body></html>
