@@ -13,4 +13,3 @@ Portfolio order:
 8 About / Contact
 
 The site is self-contained and uses local video/image assets.
-Replace hello@example.com in index.html with the final contact email when ready.
